@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Home - Dashboard
+{% endblock%}
+
+{% block content %}
+<br /><br /><br /><br /><br /><br><br><br><br><br>
+
+<div class="admin-list">
+    <p>Menu</p>
+    <a href="{{url_for('shop.add_item')}}"> Add Shop Item </a><br><br><br><br><br>
+    <a href="{{url_for('shop.item_list')}}"> Item List </a>
+</div>
+{% endblock %}

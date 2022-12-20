@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Add an item
+{% endblock %}
+
+{% block content %}
+<br><br><br><br><br><br><br><br><br><br>
+<form method="POST" enctype="multipart/form-data">
+    <div class="login-form">
+        <h2>Add an Item</h2>
+        <label for="name">Item Name: </label>
+        <input type="text" id="name" name="name" placeholder="Item Name" required>
+
+        <label for="price">Item Price: </label>
+        <input type="number" id="price" name="price" step="0.01" placeholder="Item Price" required>
+
+        <label for="quantity">Item Quantity: </label>
+        <input type="number" id="quantity" name="quantity" step="1" placeholder="Item Quantity" required>
+
+        <input type="submit">   
+    </div>
+
+</form>
+{%endblock%}

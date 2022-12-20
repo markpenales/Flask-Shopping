@@ -1,0 +1,31 @@
+<!doctype html>
+<title>{% block title %}{% endblock %}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<nav>
+  <ul>
+    <li><a href="/" class="logo">J O H T O</a></li>
+
+    {% if g.user %}
+    <li><a href="{{url_for('index')}}" {% if request.path=="/" %} class="active" {%endif%}>Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="{{url_for('shop.item_list')}}" class="shop-now">Shop now!</a></li>
+    <li><a href="{{ url_for('auth.logout') }}" class="logout">{{g.user['name']}} - Log Out</a>
+      {% else %}
+    <li><a href="{{url_for('index')}}" {% if request.path=="/" %} class="active" {%endif%}>Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="{{ url_for('auth.register') }}" {% if request.path=="/auth/register" %} class="active" {%endif%}>Register</a>
+    <li><a href="{{ url_for('auth.login') }}" class="login">Log In</a>
+      {% endif %}
+  </ul>
+</nav>
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% for message in get_flashed_messages() %}
+  <script>
+    alert('{{message}}')
+  </script>
+  {% endfor %}
+  {% block content %}{% endblock %}
+</section>

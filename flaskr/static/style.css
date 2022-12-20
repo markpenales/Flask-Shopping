@@ -1,0 +1,227 @@
+html {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  height: 100%;
+
+  background: linear-gradient(to right, rgb(243, 114, 5) 30%, white 30%);
+}
+
+nav {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  background: linear-gradient(to right, rgb(243, 114, 5) 29.6%, white 29.6%);
+  padding-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li a,
+nav ul li a.logo {
+  float: left;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 17px 16px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+nav ul li a.logo {
+  margin-right: 30%;
+  font-size: 30px;
+  background-color: black;
+  color: white;
+  padding-left: 7%;
+  padding-right: 7%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover {
+  background-color: yellow;
+  color: black;
+}
+
+nav ul li a.active {
+  text-decoration: underline;
+}
+
+.persuation .hot-item .tumbler {
+  width: 50%;
+  margin-left: 15%;
+}
+
+.persuation .hot-item .hot {
+  width: 20%;
+  margin-top: -30%;
+  margin-left: 65%;
+}
+
+.persuation .hot-item {
+  margin-right: -5%;
+}
+
+.persuation {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.message {
+  padding-left: 3%;
+  border-left: 3px solid orange;
+  margin-top: 10%;
+}
+
+.message h2 {
+  margin-top: 40%;
+}
+
+.login {
+  background-color: orange;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.logout {
+  background-color: red;
+  color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.login-form {
+  margin-left: 30%;
+  margin-right: 30%;
+  font-size: 20px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 15px;
+}
+
+.login-form input:focus {
+  border-bottom: 2px solid orange;
+}
+
+.login-form .form-element {
+  padding-top: 20px;
+}
+
+.login-form input[type="submit"] {
+  all: unset;
+  background-color: orange;
+  margin-top: 30px;
+  color: white;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.login-form input[type="submit"]:hover {
+  color: white;
+  background-color: rgb(182, 118, 0);
+}
+
+.login-form input[type="submit"]:active {
+  color: blue;
+  background-color: rgb(21, 192, 21);
+}
+
+.admin-list {
+
+  width: 40%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.admin-list p {
+  font-size: 50px;
+}
+
+.admin-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  background-color: orange;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+
+}
+
+.admin-list a:hover {
+  color: black;
+  background-color: yellow;
+}
+
+.items-list {
+  list-style: none;
+  display: flex;
+}
+
+#clear {
+  text-decoration: none;
+  background-color: red;
+  color: white;
+  padding: 7px;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: auto;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+#clear:hover {
+  background-color: rgb(212, 0, 0);
+}
+
+.item {
+  width: 20%;
+  border: 2px solid black;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.shop-now {
+  background-color: orange;
+  border-radius: 20px;
+  border: 2px solid black
+}
+
+.buy-item {
+  margin: auto;
+  margin-top: 20px;
+  width: 40%;
+  list-style-type: none;
+}
+
+.buy-item p {
+  font-size: 30px;
+
+}
+
+#delete{
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  padding: 10px;
+  border-radius: 20px;
+}

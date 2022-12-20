@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Buy - {{item['name']}}
+{% endblock %}
+
+{% block content %}
+<br><br><br><br><br>
+<form method="POST">
+    <div class="login-form buy-item">
+        <p>Buying item - {{item['name']}}</p>
+
+        <li>Item Price: {{item['price']}}</li>
+        <li>Item Left: {{item['quantity']}}</li>
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity" placeholder="Quantity">
+        <br>
+        <input type="submit" value="Buy Now">
+
+    </div>
+</form>
+
+
+{%endblock%}

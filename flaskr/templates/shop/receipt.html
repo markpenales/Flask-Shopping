@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Add an item
+{% endblock %}
+
+{% block content %}
+<br><br><br><br><br><br>
+<div class="login-form">
+
+    <p>Receipt id: {{receipt['id']}}</p>
+    <p>item id: {{receipt['item_id']}}</p>
+    <p>buyer id: {{receipt['buyer_id']}}</p>
+    <p>quantity: {{receipt['quantity']}}</p>
+    <p>Total: {{receipt['total']}}</p>
+    <p>Date Bought: {{receipt['date_bought']}}</p>
+</div>
+
+
+{%endblock%}

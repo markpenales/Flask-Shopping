@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% block title%} Home {% endblock%} {% block content
+%} <br /><br /><br /><br /><br />
+<div class="persuation">
+  <div class="hot-item">
+    <img src="static/images/tumblers.png" alt="tumblers.png" class="tumbler" />
+    <img src="static/images/Hot.png" alt="Hot.png" class="hot" />
+  </div>
+  <div class="message">
+    <h2>ORDER NOW!</h2>
+    <p>We offer tumblers of the highest quality.</p>
+    <p>We ship directly to over 200+ countries.</p>
+    <p>So get yours now!</p>
+    {% if g.user is none %}
+    <a href="{{url_for('auth.register')}}">Register</a> an account now or
+    <a href="{{url_for('auth.login')}}">Login</a>
+    {% else %}
+    <a href="{{url_for('shop.item_list')}}">Shop now!</a>
+    {% endif %}
+  </div>
+</div>
+
+</div>
+{% endblock %}
